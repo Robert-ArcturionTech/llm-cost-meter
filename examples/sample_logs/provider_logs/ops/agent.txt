@@ -1,0 +1,2 @@
+2026-09-01 07:00:00,000 INFO [cron_9] agent.loop: API call #1: model=gpt-5.1 provider=openai in=1200 out=150 total=1350 latency=3.3s cache=800/1200 (67%)
+2026-09-04 07:00:00,000 INFO [cron_9] agent.loop: API call #2: model=gpt-5.1 provider=openai in=1300 out=160 total=1460 latency=3.1s cache=900/1300 (69%)

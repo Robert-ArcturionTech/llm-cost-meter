@@ -1,0 +1,3 @@
+{"ts":"2026-09-01T08:00:00Z","msg_id":"m-legacy","to":"ops","actions":[]}
+{"ts":"2026-09-02T09:00:00Z","msg_id":"m-001","roster_agent":"ops","run_id":"run-004","correlation_id":"corr-002","actions":["notify"]}
+{"ts":"2026-09-03T11:00:00Z","msg_id":"m-002","roster_agent":"researcher","run_id":"run-007","correlation_id":"corr-005","actions":["summarize","notify"]}

@@ -1,0 +1,16 @@
+# Data and outputs
+*.db
+*.db-wal
+*.db-shm
+.demo/
+meter-data/
+digest.txt
+efficiency.json
+efficiency.md
+config.json
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/

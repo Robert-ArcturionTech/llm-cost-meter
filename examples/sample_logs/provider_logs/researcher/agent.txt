@@ -1,0 +1,5 @@
+2026-09-02 09:01:57,485 INFO [cron_1] agent.loop: API call #5: model=gpt-5.1 provider=openai in=44607 out=765 total=45372 latency=16.1s cache=43520/44607 (98%)
+2026-09-02 09:02:30,000 INFO [cron_1] agent.loop: API call #6: model=gpt-5.1 provider=openai in=500 out=20 total=520 latency=2.0s
+2026-09-03 15:20:00,250 INFO [chat_2] agent.loop: API call #1: model=gpt-5.1 provider=openai in=8200 out=1100 total=9300 latency=6.4s cache=6000/8200 (73%)
+2026-09-03 15:20:09,000 WARNING [chat_2] agent.loop: retrying after timeout
+2026-09-04 11:00:00,100 INFO [cron_3] agent.loop: API call #2: model=kimi-k2 provider=moonshot in=3000 out=400 total=3400 latency=5.2s

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Optional macOS LaunchAgent template: run `cron` (ingest + rollup + digest +
+  efficiency scorecard) every hour. Replace every /path/to/... placeholder, then:
+    cp com.example.llm-cost-meter.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.example.llm-cost-meter.plist
+  On Linux, a cron line does the same:
+    0 * * * *  python3 /path/to/llm-cost-meter/llm_cost_meter.py --config /path/to/config.json cron
+-->
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.example.llm-cost-meter</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/bin/python3</string>
+		<string>/path/to/llm-cost-meter/llm_cost_meter.py</string>
+		<string>--config</string>
+		<string>/path/to/llm-cost-meter/config.json</string>
+		<string>cron</string>
+	</array>
+	<key>Nice</key>
+	<integer>10</integer>
+	<key>ProcessType</key>
+	<string>Background</string>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StartInterval</key>
+	<integer>3600</integer>
+	<key>StandardOutPath</key>
+	<string>/path/to/logs/llm-cost-meter.out.txt</string>
+	<key>StandardErrorPath</key>
+	<string>/path/to/logs/llm-cost-meter.err.txt</string>
+</dict>
+</plist>

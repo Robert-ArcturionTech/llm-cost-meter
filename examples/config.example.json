@@ -1,0 +1,24 @@
+{
+  "db_path": "./meter-data/meter.db",
+  "out_dir": "./meter-data",
+  "sources": {
+    "claude_projects": "~/.claude/projects",
+    "codex_sessions": "~/.codex/sessions",
+    "router_log": "~/agent-logs/llm-router.jsonl",
+    "dispatch_log": "~/agent-logs/dispatch.jsonl",
+    "context_log": "~/agent-logs/context.jsonl",
+    "provider_logs": "~/agent-logs/providers/*/agent.log"
+  },
+  "provider_log_timezone": "UTC",
+  "agent_markers": ["agents"],
+  "roster_agents": [],
+  "allowed_models": ["gpt-5.1"],
+  "codex_config": "~/.codex/config.toml",
+  "pricing": {
+    "claude-sonnet": [3.0, 15.0]
+  },
+  "efficiency_policy": {
+    "context_pressure_percent": 80,
+    "minimum_sample_size": 10
+  }
+}
