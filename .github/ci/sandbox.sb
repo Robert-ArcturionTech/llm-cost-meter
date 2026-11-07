@@ -1,0 +1,6 @@
+(version 1)
+(allow default)
+(deny network*)
+(deny file-write* (subpath (param "USER_HOME")))
+(deny file-read* (subpath (param "PRIVATE_CONFIG")) (subpath (param "PRIVATE_LIBRARY")) (subpath (param "PRIVATE_CLAUDE")) (subpath (param "PRIVATE_CODEX")) (subpath (param "PRIVATE_SSH")))
+(deny process-exec (literal "/usr/bin/security") (literal "/usr/bin/pbcopy") (literal "/usr/bin/pbpaste") (literal "/usr/bin/open") (literal "/usr/bin/osascript") (subpath "/Applications") (subpath "/System/Applications"))
